@@ -6,10 +6,17 @@
 }
 
 body {
-    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background: linear-gradient(rgba(248, 246, 246, 0.61), rgba(231, 223, 223, 0.541)),
     url("images/Bubbles.jpg") no-repeat center center fixed;
     background-size: cover;
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
 }
 
 header {
@@ -17,6 +24,8 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    height: auto;
+    flex-shrink: 0;
 }
 
 header h1{
@@ -111,11 +120,16 @@ i:hover{
 }
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background: #023e8a;
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: 40px;
+    flex-shrink: 0;
 }
 
 
