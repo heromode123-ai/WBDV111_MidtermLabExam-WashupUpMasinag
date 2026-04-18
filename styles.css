@@ -12,12 +12,11 @@ body {
     background: linear-gradient(rgba(248, 246, 246, 0.61), rgba(231, 223, 223, 0.541)),
     url("images/Bubbles.jpg") no-repeat center center fixed;
     background-size: cover;
+    height: 100%;
     margin: 0;
+    padding-bottom: 100px;
 }
 
-main {
-    flex-grow: 1;
-}
 
 header {
     background: #0077b6;
@@ -67,6 +66,7 @@ nav a:hover {
 
 .container {
     padding: 20px;
+    flex: 1;
 }
 
 .services {
@@ -105,7 +105,7 @@ img {
     margin-bottom: 10px;
 }
 
-.about, .contact {
+.about{
     margin-top: 40px;
 }
 
@@ -120,7 +120,6 @@ i:hover{
 }
 
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -128,9 +127,8 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 40px;
-    flex-shrink: 0;
-}
+    margin-bottom: -100px;
+    }
 
 
 .button {
