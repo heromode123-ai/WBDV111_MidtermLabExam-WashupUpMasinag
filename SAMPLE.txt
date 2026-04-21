@@ -1,0 +1,33 @@
+<div id="welcome-message" class="hidden">Welcome to our site!</div>
+html
+
+/* Define the animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-first-visit {
+  animation: fadeIn 2s ease-out forwards;
+}
+
+.hidden { opacity: 0; }
+CSS
+
+document.addEventListener("DOMContentLoaded", () => {
+  const element = document.getElementById("welcome-message");
+  
+  // 1. Check if the user has visited before
+  if (!localStorage.getItem("hasVisited")) {
+    // 2. If not, add the animation class
+    element.classList.remove("hidden");
+    element.classList.add("animate-first-visit");
+    
+    // 3. Mark as visited so it doesn't repeat
+    localStorage.setItem("hasVisited", "true");
+  } else {
+    // Optional: Keep hidden or show immediately without animation
+    element.classList.remove("hidden");
+  }
+});
+jss
