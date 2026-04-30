@@ -68,6 +68,12 @@ nav a:hover {
     position: relative;
 }
 
+.modal-content h2, 
+.modal-content p {
+    text-align: center;
+    margin-top: 10px;
+}
+
 .close-btn {
     position: absolute;
     top: 10px;
