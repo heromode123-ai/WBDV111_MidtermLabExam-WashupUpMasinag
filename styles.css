@@ -829,6 +829,30 @@ footer {
     }
 }
 
+@media (max-height: 480px) and (orientation: landscape) {
+
+    header {
+        padding: 12px 15px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .hours {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+
+    nav a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
 
 @media (max-width: 480px) {
 
