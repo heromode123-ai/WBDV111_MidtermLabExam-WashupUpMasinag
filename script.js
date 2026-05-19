@@ -26,7 +26,7 @@ window.onload = function() {
     const closeBtn = document.querySelector(".close-btn");
 
     if (modal) {
-        modal.style.display = "block"; 
+        modal.style.display = "flex"; 
     }
     
     // Switch statement depending on the day
