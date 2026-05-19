@@ -830,7 +830,7 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
     body {
         padding-bottom: 120px;
@@ -887,7 +887,7 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
     .pricing-section {
         padding: 30px 15px;
