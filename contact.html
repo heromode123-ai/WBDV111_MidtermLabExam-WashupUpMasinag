@@ -10,60 +10,155 @@
 </head>
 <body>
 
+<div class="bar">
 <header>
     <h1>Wash Up Masinag</h1>
     <p>Your Trusted Laundry Service</p>
+    <p class="hours">Open:10:00 AM - 8:00 PM daily.</p>
 </header>
 
-<nav>
+<div class="nav-container">
+
+    <div class="burger" onclick="toggleMenu()">
+        ☰
+    </div>
+
+<nav id="menu">
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="active">Contact</a>
     <a href="aboutus.html">About Us</a>
     
 </nav>
+</div>
 
+</div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
 
  <div class="container">
 
     <section class="contact" id="contact">
         <h2>Ready To Save Time?</h2>
         <p class="contact-sub">Contact Us Today</p>
+        
+<div class="contact-cards">
 
-        <div class="contact-cards">
-
-            
-            <div class="contact-card">
-                <i class="fa-solid fa-location-dot"></i>
-                <h3>Location</h3>
-                <p>Km. 12 GEP Ben'z Compd,<br> Sumulong Hi-way, Brgy. Mayamot,<br> Antipolo City</p>
-            </div>
-
-            
-            <div class="contact-card">
-            <a href="https://account.viber.com/en/login">
-                <i class="fa-brands fa-viber"></i>
-            </a> 
-                <h3>Phone</h3>
-                <p>0922-890-1688</p>
-            </div>
-
-            
-            <div class="contact-card">
-            <a href="mailto:washupmasinag@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-                <h3>Email</h3>
-                <p>washupmasinag@gmail.com</p>
-            </div>
-
+    
+    <a href="https://maps.google.com" class="card-link" target="_blank">
+        <div class="contact-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Location</h3>
+            <p>Km. 12 GEP Ben'z Compd, Sumulong Hi-way, Brgy. Mayamot, Antipolo City
+            </p>
         </div>
+    </a>
+
+    
+    <a href="https://account.viber.com/en/login" class="card-link" target="_blank">
+        <div class="contact-card">
+            <i class="fa-brands fa-viber"></i>
+            <h3>Phone</h3>
+            <p>0922-890-1688</p>
+        </div>
+    </a>
+
+    
+    <a href="mailto:washupmasinag@gmail.com" class="card-link">
+        <div class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Email</h3>
+            <p>washupmasinag@gmail.com</p>
+        </div>
+    </a>
+
+</div>
 
         <a href="mailto:washupmasinag@gmail.com" class="button">
             💬 Email Us
         </a>
     </section>
 
+</div>
+
+<section class="faq" id="faq">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-box">
+        <h3>What services does Wash Up Masinag offer?</h3>
+        <p>
+            Wash Up Masinag offers washing, drying, folding, and laundry care services 
+            to help make your laundry day fast, easy, and convenient.
+        </p>
+    </div>
+
+    <div class="faq-box">
+        <h3>What are your operating hours?</h3>
+        <p>
+            We are open daily from 10:00 AM to 8:00 PM to serve you better.
+        </p>
+    </div>
+
+    <div class="faq-box">
+        <h3>How long does the laundry service take?</h3>
+        <p>
+            Laundry service usually takes a few hours depending on the number of clothes 
+            and current customer volume.
+        </p>
+    </div>
+
+    <div class="faq-box">
+        <h3>Do you handle delicate clothes?</h3>
+        <p>
+            Yes, we carefully handle delicate fabrics and follow proper washing procedures 
+            to keep your clothes safe and clean.
+        </p>
+    </div>
+
+    <div class="faq-box">
+        <h3>Why choose Wash Up Masinag?</h3>
+        <p>
+            We provide affordable prices, friendly customer service, and clean laundry 
+            with care so you can enjoy more time with your family.
+        </p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+<div class="footer-extra">
+
+    <div class="footer-content">
+
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p>📍 Sumulong Highway, Antipolo City</p>
+            <p>📞 0922-890-1688</p>
+            <p>✉️ washupmasinag@email.com</p>
+        </div>
+
+       
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="aboutus.html">About us</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Wash Up Masinag</h3>
+            <p>
+                Wash Up Masinag provides professional laundry services with affordable pricing,
+                fast turnaround, and friendly customer service you can trust.
+            </p>
+        </div>
+
+    </div>
 </div>
 
 <footer>

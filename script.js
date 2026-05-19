@@ -94,3 +94,37 @@ cards.forEach(card => {
         }
     });
 });
+
+const faqBoxes = document.querySelectorAll('.faq-box');
+
+faqBoxes.forEach(box => {
+    box.addEventListener('click', function(e) {
+
+        // Ripple effect
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple');
+        this.appendChild(ripple);
+
+        const rect = this.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        ripple.style.left = `${x}px`;
+        ripple.style.top = `${y}px`;
+
+        setTimeout(() => ripple.remove(), 600);
+
+        // FAQ content
+        const answer = this.querySelector('p');
+
+        // Close other FAQ answers
+        document.querySelectorAll('.faq-box p').forEach(p => {
+            if (p !== answer) {
+                p.classList.remove('show-answer');
+            }
+        });
+
+        // Toggle clicked answer
+        answer.classList.toggle('show-answer');
+    });
+});

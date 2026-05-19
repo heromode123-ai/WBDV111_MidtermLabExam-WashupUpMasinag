@@ -9,21 +9,77 @@
 </head>
 <body>
 
+<div class="bar">
 <header>
     <h1>Wash Up Masinag</h1>
     <p>Your Trusted Laundry Service</p>
+    <p class="hours">Open:10:00 AM - 8:00 PM daily.</p>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
+<div class="nav-container">
+
+    <div class="burger" onclick="toggleMenu()">
+        ☰
+    </div>
+
+<nav id="menu">
+    <a href="index.html" class="active">Home</a>
     <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
     <a href="aboutus.html">About Us</a>
 </nav>
+</div>
+
+</div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
 
 <section class="clean" id="home">
-    <h1>Clean Clothes, Happy Life</h1>
+    <h1>Your Friendly Neighbor Laundry Shop</h1>
+    <h2>Fast, Affordable, And Reliable Laundry Service Near You</h2>
 </section>
+
+<div class="card-home">
+    <img src="images/BE-AF.jpg" alt="Before and After">
+    <div class="content"> 
+        <h1>CLEAN CLOTHES, HAPPY LIFE</h1> 
+        <p>Getting tired from work and still need to do all your laundry? Welcome to Wash Up Masinag, here to help make your laundry day fast, easy, convenient, and affordable, so you can spend more time relaxing with your family and enjoying what matters most.</p>
+         <section class="service-link" id="Home">
+           <a href="services.html" class="button">View Services</a>
+        </section>  
+   </div>
+</div>
+
+
+<div class="card-home">
+    <img src="images/Welcome.jpg" alt="Welcome">
+    <div class="content"> 
+        <h1>WELCOMING YOU WITH A SMILE</h1> 
+        <p>Your trusted laundry partner for clean clothes, affordable prices, and friendly customer service. We are committed to making your laundry day easier by providing fast, reliable, and high-quality washing services that fit your busy lifestyle. From everyday clothes to delicate fabrics, we handle every load with care to ensure freshness, cleanliness, and customer satisfaction every time you visit.</p>
+         <section class="service-link" id="Home">
+           <a href="aboutus.html" class="button">Discover More</a>
+        </section>  
+   </div>
+   </div> 
+
+</div>
+
+<div class="card-home">
+    <img src="images/thoughts.jpg" alt="Feedback">
+    <div class="content"> 
+        <h1>WE ARE LISTENING</h1> 
+        <p>Have questions, concerns, or special requests? Feel free to reach out to us anytime and we'll be happy to assist you. Whether it’s about our services, pricing, or schedules, our team is always ready to respond and guide you. We value your feedback because it helps us improve and continue giving you the best laundry experience possible.</p>
+         <section class="service-link" id="Home">
+           <a href="contact.html" class="button">Contact Us</a>
+        </section>  
+   </div>
+   </div> 
+
+</div>
 
 <div id="welcomeModal" class="modal">
   <div class="modal-content">
@@ -31,6 +87,82 @@
     <h2>Welcome!</h2>
     <p id="time-greeting">Loading greeting...</p>
   </div>
+</div>
+
+<section class="faq" id="faq">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-box">
+        <h3>What services does Wash Up Masinag offer?</h3>
+        <p>
+            Wash Up Masinag offers washing, drying, folding, and laundry care services 
+            to help make your laundry day fast, easy, and convenient.
+        </p>
+    </div>
+
+    <div class="faq-box">
+        <h3>What are your operating hours?</h3>
+        <p>
+            We are open daily from 10:00 AM to 8:00 PM to serve you better.
+        </p>
+    </div>
+
+    <div class="faq-box">
+        <h3>How long does the laundry service take?</h3>
+        <p>
+            Laundry service usually takes a few hours depending on the number of clothes 
+            and current customer volume.
+        </p>
+    </div>
+
+    <div class="faq-box">
+        <h3>Do you handle delicate clothes?</h3>
+        <p>
+            Yes, we carefully handle delicate fabrics and follow proper washing procedures 
+            to keep your clothes safe and clean.
+        </p>
+    </div>
+
+    <div class="faq-box">
+        <h3>Why choose Wash Up Masinag?</h3>
+        <p>
+            We provide affordable prices, friendly customer service, and clean laundry 
+            with care so you can enjoy more time with your family.
+        </p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+<div class="footer-extra">
+
+    <div class="footer-content">
+
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p>📍 Sumulong Highway, Antipolo City</p>
+            <p>📞 0922-890-1688</p>
+            <p>✉️ washupmasinag@email.com</p>
+        </div>
+
+       
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="aboutus.html">About us</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Wash Up Masinag</h3>
+            <p>
+                Wash Up Masinag provides professional laundry services with affordable pricing,
+                fast turnaround, and friendly customer service you can trust.
+            </p>
+        </div>
+
+    </div>
 </div>
 
 <footer>

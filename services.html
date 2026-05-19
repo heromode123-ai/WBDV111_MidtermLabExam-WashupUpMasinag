@@ -9,23 +9,42 @@
 </head>
 <body>
 
+<div class="bar">
+
 <header>
     <h1>Wash Up Masinag</h1>
     <p>Your Trusted Laundry Service</p>
+    <p class="hours">Open:10:00 AM - 8:00 PM daily.</p>
 </header>
 
-<nav>
+<div class="nav-container">
+
+    <div class="burger" onclick="toggleMenu()">
+        ☰
+    </div>
+
+<nav id="menu">
     <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
+    <a href="services.html" class="active">Services</a>
     <a href="contact.html">Contact</a>
     <a href="aboutus.html">About Us</a>  
 
 </nav>
+</div>
+
+</div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
 <div class="container">
 
     <section id="service">
         <h2>Our Services</h2>
-
+                                                                            
         <div class="services">
 
             <div class="card">
@@ -33,7 +52,7 @@
                 <h3 class="trigger">Wash & Fold</h3>
                 <p class="hidden">Quick and affordable laundry service.</p>
             </div>
-
+                             
             <div class="card">
                 <img src="images/DryCleaning.jpg" alt="Service for dry cleaning">
                 <h3 class="trigger">Dry Cleaning</h3>
@@ -51,8 +70,132 @@
                 <h3 class="trigger">Hand Washing</h3>
                 <p class="hidden">Washing for fragile cloth.</p>
             </div>
+
+            <div class="card">
+                <img src="images/self-service.webp" alt="You operates the Machine">
+                <h3 class="trigger">Self-Service</h3>
+                <p class="hidden">Customer operates Machine</p>
+                
+            </div>
         </div>
     </section>
+</div> 
+
+<div class="Procedure">
+
+    <section class="pricing-section">
+    <h1>Pricing</h1>
+
+    <div class="pricing-cards">
+
+        <div class="pricing-card">
+            <h2>Normal Load</h2>
+            <p class="price">₱50 per kilo</p>
+            <p>Suggested for Light Fabrics</p>
+        </div>
+
+        <div class="pricing-card">
+            <h2>Normal Load w/ INV</h2>
+            <p class="price">₱75 per kilo</p>
+            <p>Suggested for Light Fabrics</p>
+        </div>
+
+        <div class="pricing-card">
+            <h2>Super Load</h2>
+            <p class="price">₱50 per kilo</p>
+            <p>Suggested for Heavy Fabrics</p>
+        </div>
+
+    </div>
+</section>
+    <h1>How It Works</h1>
+    <p>
+        At Wash Up Masinag, we make laundry simple, affordable, and convenient for everyone. 
+        Think of it like using a computer at an internet café, you pay for the use of the 
+        machine, not for how many clothes you wash. Our laundry service works the same way. 
+        You pay per load, not per piece of clothing, so you can wash a mix of shirts, jeans, 
+        towels, uniforms, and more in one load.
+    </p>
+
+    <p>
+        A single load can handle up to 7 kilos of laundry, making it a practical and 
+        budget-friendly option for students, workers, and families. Whether you have 
+        everyday clothes, bedsheets, or towels, our modern washing and drying machines 
+        are designed to clean your laundry efficiently while saving you time and effort.
+    </p>
+
+    <p>
+        We offer two types of services: Full Service and Self-Service. The difference 
+        is simple, it depends on who does the work.
+    </p>
+
+    <p>
+        For our Full Service (Drop-Off) option, you simply bring your pre-sorted laundry 
+        to us and our staff will take care of everything for you. We handle the washing, 
+        drying, and folding so you can relax or focus on your day. After a few hours, 
+        you can return to pick up your freshly cleaned, neatly folded, and properly packed clothes.
+    </p>
+
+    <p>
+        For our Self-Service (Do-It-Yourself) option, you personally use our washing and 
+        drying machines. You load and unload your laundry, transfer clothes to the dryer, 
+        and fold them afterward. If it's your first time, there's no need to worry,
+        our friendly staff will gladly guide you on how to use the machines.
+    </p>
+
+    <p>
+        At Wash Up Masinag, our goal is to provide clean clothes, affordable prices, 
+        and friendly customer service in a welcoming environment.
+    </p>
+
+</div>
+
+
+<div class="card-Features"> 
+    <h1>Features</h1>
+    <ul class="list-Features">
+        <li>✦︎ Clean and well maintained commercial laundry equipment so your clothes are always clean</li>
+        <li>✦︎ No mixing of customers' clothing for hygienic purposes and to eliminate lost items</li>
+        <li>✦︎ Friendly and knowledgeable staff to assist and guide you</li>    
+        <li>✦︎ High quality laundry products so you can get the best results</li>    
+        <li>✦︎ All services are completed the same day</li>  
+    </ul>
+</div>
+<section class="contact-link" id="Service">
+<p>Ready To Start
+    <a href="contact.html">Contact Us</a>
+</p>
+</section>
+
+<div class="footer-extra">
+
+    <div class="footer-content">
+
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p>📍 Sumulong Highway, Antipolo City</p>
+            <p>📞 0922-890-1688</p>
+            <p>✉️ washupmasinag@email.com</p>
+        </div>
+
+       
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="aboutus.html">About us</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Wash Up Masinag</h3>
+            <p>
+                Wash Up Masinag provides professional laundry services with affordable pricing,
+                fast turnaround, and friendly customer service you can trust.
+            </p>
+        </div>
+
+    </div>
 </div>
 
 <footer>

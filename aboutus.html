@@ -9,25 +9,42 @@
 </head>
 <body>
 
-<header>
+
+<div class="bar">
+ <header>
     <h1>Wash Up Masinag</h1>
     <p>Your Trusted Laundry Service</p>
-</header>
+    <p class="hours">Open:10:00 AM - 8:00 PM daily.</p>
+ </header>
 
-<nav>
+ <div class="nav-container">
+
+    <div class="burger" onclick="toggleMenu()">
+        ☰
+    </div>
+
+ <nav id="menu">
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
-    <a href="aboutus.html">About Us</a>
-</nav>
+    <a href="aboutus.html" class="active">About Us</a>
+ </nav> 
+</div>
+</div>
 
-<section class="clean" id="aboutus">
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
+<section class="clean2" id="aboutus">
     <h1>Clean Clothes, Happy Life</h1>
 </section>
 
 <div class="container">
 
-   <section class="about" id="about">
+   <section class="about" id="aboutus">
     <h2>About Us</h2>
 
     <p>
@@ -72,15 +89,46 @@
 
     <div class="card-feed">
         <p>"Very fast and clean! Highly recommended."</p>
-        <h4>- Maria S.</h4>
+        <h4>- Gilbert S.</h4>
     </div>
 
     <div class="card-feed">
         <p>"Affordable and reliable service. I always come back!"</p>
-        <h4>- John D.</h4>
+        <h4>- Steven D.</h4>
     </div>
 </section>
 
+</div>
+
+<div class="footer-extra">
+
+    <div class="footer-content">
+
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p>📍 Sumulong Highway, Antipolo City</p>
+            <p>📞 0922-890-1688</p>
+            <p>✉️ washupmasinag@email.com</p>
+        </div>
+
+       
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="aboutus.html">About us</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Wash Up Masinag</h3>
+            <p>
+                Wash Up Masinag provides professional laundry services with affordable pricing,
+                fast turnaround, and friendly customer service you can trust.
+            </p>
+        </div>
+
+    </div>
 </div>
 
 <footer>
