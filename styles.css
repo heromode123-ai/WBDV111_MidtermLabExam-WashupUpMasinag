@@ -920,7 +920,7 @@ footer {
     .pricing-card p {
         font-size: 14px;
     }
-
+}
     @media (max-height: 480px) and (orientation: landscape) {
 
     header {
